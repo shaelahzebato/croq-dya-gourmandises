@@ -11,6 +11,7 @@ export default function Home() {
         <div className="mt-8">
           <div className="text-4xl animate-float-1">🧁</div>
         </div>
+        <button className="text-cream border-chocolat border-1 bg-rose-bonbon">Dyaaa !</button>
       </div>
     </div>
   );
