@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// module.exports = {}
-export default {
+module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quicksand: ['var(--font-quicksand)', 'sans-serif'],
+        dancing: ['var(--font-dancing-script)', 'cursive'],
+      },
       colors: {
         'rose-bonbon': '#FF69B4',
         'cream': '#FFF8DC',
@@ -18,10 +21,11 @@ export default {
         'blanc-casse': '#FEFEFE',
         'violet-doux': '#DDA0DD',
       },
-      fontFamily: {
-        'dancing': ['Dancing Script', 'cursive'],
-        'quicksand': ['Quicksand', 'sans-serif'],
-      },
+      backgroundImage: {
+        'gradient-rose-fraise': 'linear-gradient(45deg, #FF69B4, #FFB6C1)',
+        'gradient-custom': 'linear-gradient(45deg, var(--rose-bonbon), var(--fraise))',
+      }
     },
   },
+  plugins: [],
 }
